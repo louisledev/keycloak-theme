@@ -8,7 +8,9 @@ See keycloak reference for additional documentation.
 docker build -t my-keycloak-image .
 
 # Start
-docker-compose up -d
+```
+docker-compose up
+```
 
 # Access keycloak
 go to http://loclahost:8080/auth
@@ -21,7 +23,9 @@ Credential:
 Go into the realm settings, click on the 'Themes' tab and pick 'my-logo-example'
 
 # Stop
+```
+CTRL+C
 docker-compose down
 docker volume rm keycloak_postgres_data
-
+```
 
